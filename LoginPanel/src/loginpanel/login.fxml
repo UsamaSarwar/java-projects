@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginpanel.loginController">
+   <children>
+      <BorderPane layoutX="42.0" prefHeight="600.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <GridPane BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField fx:id="txt_username" alignment="CENTER" focusTraversable="false" prefHeight="25.0" prefWidth="210.0" promptText="🤵 Username" GridPane.rowIndex="2" />
+                        <PasswordField fx:id="txt_password" alignment="CENTER" focusTraversable="false" maxWidth="1.7976931348623157E308" promptText="🔑 Password" GridPane.rowIndex="3" />
+                        <CheckBox fx:id="rememberMe" alignment="TOP_LEFT" focusTraversable="false" mnemonicParsing="false" text="Remember Me" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+                        <Text fx:id="label_AdminLogin" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Login" textAlignment="CENTER" textOrigin="CENTER" wrappingWidth="266.779296875" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Century Gothic" size="12.0" />
+                           </font>
+                           <rotationAxis>
+                              <Point3D />
+                           </rotationAxis>
+                        </Text>
+                        <Button fx:id="button_login" defaultButton="true" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#function_LoginButton" prefHeight="31.0" prefWidth="300.0" text="Login" GridPane.rowIndex="5" />
+                        <Label fx:id="txt_signUp" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#function_signUp" prefHeight="17.0" prefWidth="278.0" textAlignment="CENTER" textFill="#e80000" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                           <effect>
+                              <Glow />
+                           </effect></Label>
+                        <Label fx:id="txt_failSignIn" alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#function_signUp" prefHeight="17.0" prefWidth="150.0" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </center></BorderPane>
+   </children>
+</AnchorPane>

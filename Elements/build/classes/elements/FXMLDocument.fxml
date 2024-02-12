@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="900.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="elements.FXMLDocumentController">
+   <children>
+      <Text fill="#2f2f2f" layoutX="393.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up Form" wrappingWidth="120.68359375">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <ProgressBar fx:id="pb_Progress" layoutX="107.0" layoutY="423.0" prefHeight="18.0" prefWidth="696.0" progress="0.0" />
+      <Button fx:id="b_signUp" defaultButton="true" layoutX="427.0" layoutY="457.0" mnemonicParsing="false" onAction="#f_SignUp" text="Sign Up" />
+      <TextField fx:id="tf_FirstName" layoutX="105.0" layoutY="137.0" prefHeight="25.0" prefWidth="332.0" promptText="First Name" />
+      <TextField fx:id="tf_LastName" layoutX="469.0" layoutY="137.0" prefHeight="25.0" prefWidth="332.0" promptText="Last Name" />
+      <TextField fx:id="tf_Email" layoutX="105.0" layoutY="210.0" prefHeight="25.0" prefWidth="696.0" promptText="Email Address" />
+      <TextField fx:id="tf_ContactNumber" layoutX="105.0" layoutY="244.0" prefHeight="25.0" prefWidth="696.0" promptText="Contact Number" />
+      <TextField fx:id="tf_homeAddress" layoutX="105.0" layoutY="282.0" prefHeight="25.0" prefWidth="696.0" promptText="Home Address" />
+      <TextField fx:id="tf_CNIC" layoutX="105.0" layoutY="173.0" prefHeight="25.0" prefWidth="332.0" promptText="CNIC Number" />
+      <TextField fx:id="tf_Gender" layoutX="469.0" layoutY="173.0" prefHeight="25.0" prefWidth="332.0" promptText="Gender" />
+      <Circle fx:id="b_Exit" fill="#f82e2e" layoutX="877.0" layoutY="23.0" onMouseClicked="#f_Exit" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <ProgressIndicator fx:id="pi_Progress" layoutX="442.0" layoutY="340.0" prefHeight="40.0" prefWidth="36.0" progress="0.0" />
+      <Button layoutX="436.0" layoutY="137.0" mnemonicParsing="false" onAction="#b1" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="435.0" layoutY="173.0" mnemonicParsing="false" onAction="#b3" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="802.0" layoutY="173.0" mnemonicParsing="false" onAction="#b4" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="802.0" layoutY="137.0" mnemonicParsing="false" onAction="#b2" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="802.0" layoutY="282.0" mnemonicParsing="false" onAction="#b7" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="802.0" layoutY="244.0" mnemonicParsing="false" onAction="#b6" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Button layoutX="802.0" layoutY="210.0" mnemonicParsing="false" onAction="#b5" prefHeight="25.0" prefWidth="36.0" text="✔" />
+      <Line fx:id="line" endX="785.0" layoutX="115.0" layoutY="498.0" startX="-115.0" />
+      <Text fx:id="text1" layoutX="322.0" layoutY="524.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saved Details" textAlignment="CENTER" wrappingWidth="266.623046875" />
+      <Text fx:id="text11" layoutX="45.0" layoutY="553.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="266.623046875" />
+      <Text fx:id="text111" layoutX="45.0" layoutY="569.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CNIC" wrappingWidth="266.623046875" />
+      <Text fx:id="text112" layoutX="45.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="266.623046875" />
+      <Text fx:id="text113" layoutX="514.0" layoutY="552.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" wrappingWidth="266.623046875" />
+      <Text fx:id="text1131" layoutX="514.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Number" wrappingWidth="266.623046875" />
+      <Text fx:id="text1132" layoutX="514.0" layoutY="585.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="266.623046875" />
+   </children>
+</AnchorPane>

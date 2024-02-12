@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="audiopadbeta.FXMLDocumentController">
+   <children>
+      <TextArea fx:id="audiopad" editable="false" focusTraversable="false" prefHeight="44.0" prefWidth="900.0" promptText="Listening..." wrapText="true" AnchorPane.bottomAnchor="556.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <TextArea fx:id="typing" editable="false" focusTraversable="false" layoutY="53.0" prefHeight="547.0" prefWidth="900.0" promptText="Autotyping..." wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0" />
+      <Circle fx:id="B_record" fill="#00dd21" layoutX="851.0" layoutY="577.0" onMouseClicked="#record" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow/>
+               </bumpInput>
+               <light>
+                
+               </light>
+            </Lighting>
+         </effect></Circle>
+      <Circle fx:id="B_stop" fill="#db0000" layoutX="877.0" layoutY="577.0" onMouseClicked="#stop" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                 
+               </light>
+            </Lighting>
+         </effect>
+      </Circle>
+   </children>
+</AnchorPane>

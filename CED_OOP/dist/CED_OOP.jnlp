@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CED_OOP.jnlp">
+  <information>
+    <title>CED_OOP</title>
+    <vendor>Usama</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CED_OOP.jar" size="13696" download="eager" />
+    <jar href="lib\commons-codec-1.13.jar" size="344339" download="eager" />
+    <jar href="lib\commons-collections4-4.4.jar" size="751914" download="eager" />
+    <jar href="lib\gradle-wrapper.jar" size="54212" download="eager" />
+    <jar href="lib\jxl-2.6.jar" size="660390" download="eager" />
+    <jar href="lib\jxl.jar" size="725735" download="eager" />
+    <jar href="lib\poi-4.1.1.jar" size="2827712" download="eager" />
+    <jar href="lib\poi-ooxml-4.1.1.jar" size="1859884" download="eager" />
+    <jar href="lib\poi-scratchpad-4.1.1.jar" size="1800622" download="eager" />
+    <jar href="lib\protobuf-java-2.6.0.jar" size="596435" download="eager" />
+    <jar href="lib\resolver.jar" size="60047" download="eager" />
+    <jar href="lib\stax-api-1.0.1.jar" size="26514" download="eager" />
+    <jar href="lib\xmlbeans-3.1.0-javadoc.jar" size="2607831" download="eager" />
+    <jar href="lib\xmlbeans-3.1.0-sources.jar" size="1867405" download="eager" />
+    <jar href="lib\xmlbeans-3.1.0.jar" size="2579738" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CED_OOP" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="ced_oop.CED_OOP"  name="CED_OOP" />
+  <update check="always"/>
+</jnlp>

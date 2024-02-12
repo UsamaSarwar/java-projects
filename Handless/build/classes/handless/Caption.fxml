@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane id="AnchorPane" fx:id="primaryStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="68.0" prefWidth="1171.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="handless.CaptionController">
+   <children>
+      <TextFlow prefHeight="68.0" prefWidth="1171.0" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Loading..." textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+         </children>
+         
+      </TextFlow>
+      <AnchorPane layoutX="1148.0" layoutY="5.0">
+         <children>
+            <Circle fill="#ff3b3b" focusTraversable="true" onMouseClicked="#back" radius="9.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow>
+                           <input>
+                              <Glow />
+                           </input>
+                        </Shadow>
+                     </bumpInput>
+                     
+                  </Lighting>
+               </effect>
+            </Circle>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

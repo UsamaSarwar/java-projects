@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JARVIS.jnlp">
+  <information>
+    <title>JARVIS</title>
+    <vendor>Usama</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JARVIS.jar" size="8872" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\guava-22.0.jar" size="2575022" download="eager" />
+    <jar href="lib\java-flac-encoder-0.3.7.jar" size="89315" download="eager" />
+    <jar href="lib\java-google-speech-api-V2.1.jar" size="51036" download="eager" />
+    <jar href="lib\mysql-connector.jar" size="397032" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="JARVIS" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cypher.CYPHER"  name="JARVIS" />
+  <update check="always"/>
+</jnlp>

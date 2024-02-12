@@ -1,0 +1,1 @@
+TaskKill /IM sapisvr.exe /F

@@ -1,0 +1,13 @@
+1631:Chocolates:31:10.0
+122:Soap:23:7.5
+5234:Noodles:55:4.0
+1344:Chocolate Milk:40:3.0
+1214:Sealtest Milk:35:13.3
+1224:MoBiLe CoVeR:10:5.0
+1333:Mobile Charger:15:7.0
+3234:Spagati:20:6.0
+1367:Ice Cream:16:2.5
+5907:Car:2:1.0
+4512:computers:3:1256.7
+3212:Keypad:32:24.7
+3214:Test:30:4.5

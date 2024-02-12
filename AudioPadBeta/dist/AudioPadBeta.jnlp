@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AudioPadBeta.jnlp">
+  <information>
+    <title>AudioPadBeta</title>
+    <vendor>Usama</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AudioPadBeta.jar" size="5507" download="eager" />
+    <jar href="lib\java-flac-encoder-0.3.7.jar" size="89315" download="eager" />
+    <jar href="lib\java-google-speech-api-V2.1.jar" size="51036" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AudioPadBeta" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="audiopadbeta.AudioPadBeta"  name="AudioPadBeta" />
+  <update check="always"/>
+</jnlp>
